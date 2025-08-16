@@ -1,0 +1,49 @@
+h1{
+  text-align: center;
+}
+ul.social-media li{
+  list-style-type: none;
+  background-color: lightblue;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: red;
+}
+
+a:active{
+  color: blue;
+}
+
+ul.custom-bullets li{
+  list-style-type: disc;
+  background-color: lightblue;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+ol.custom-numbers li{
+  list-style-type: lower-greek;
+  background-color: lightblue;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+ul.custom-icon{
+  padding-left: 0px;
+}
+ul.custom-icon li{
+  margin-left: 0px;
+  list-style-type: none;
+  background: url('https://cdn-icons-png.flaticon.com/256/5289/5289675.png') no-repeat left center;
+  background-size: 15px ;
+  margin: 5px;
+  padding: 10px 10px 10px 24px;
+  text-align: left;
+}
