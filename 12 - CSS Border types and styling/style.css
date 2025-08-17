@@ -1,0 +1,24 @@
+.simple-border{
+  border: 50px groove black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.round-corner{
+  border: 2px dotted magenta;
+  border-radius: 5px;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  margin-bottom: 20px;
+}
+
+.ellipse{
+  height: 100px;
+  width: 200px;
+  border: 2px solid seagreen;
+  border-radius: 50% / 20px ;
+  text-align: center;
+  line-height: 100px;
+}
