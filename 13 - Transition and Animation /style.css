@@ -1,0 +1,38 @@
+div.transition{
+  width: 300px;
+  height: 200px;
+  border: 2px solid black;
+  background-color: lightpink;
+  transition: background-color 0.5s linear, transform 0.8s ease-in-out;
+  margin-bottom: 20px;
+}
+/* 
+transition: property time timing function (ease, ease-in / out / in-out) delay
+*/
+.transition:hover{
+  background-color: mediumpurple;
+  transform: scale(1.5);
+}
+
+.combined{
+  background-color: lightsalmon;
+  height: 150px;
+  width: 200px;
+  transition: transform 0.5s ease-in-out;
+  animation: rotate 3s ease-in-out 2s 5 backwards;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.combined:hover{
+  transform: translateX(200px);
+}
