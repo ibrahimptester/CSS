@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(88, 71, 71);
+    color: rgb(145, 233, 13);
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+nav ul li{
+    display: inline;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(145, 233, 13);
+    transition: color 0.4s ease, transform 5s ease;
+}
+
+nav ul li a:hover{
+    color: gold;
+    font-size: 1.4rem;
+    
+}
+
+.content{
+    margin: 20px 10px;
+}
+
+section h2{
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: rgb(88, 71, 71);
+    color: rgb(145, 233, 13);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-width: 480px){
+    h1{
+        font-size: 1.3rem;
+    }
+    nav ul li{
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+    footer::after{
+        content: "You're on Mobile"
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .content{
+        background-color: black;
+        color: whitesmoke;
+    }
+    footer::after{
+        content: "You're on Tablet";
+    }
+}
+
+@media (min-width: 769px){
+    footer::after{
+        content: "You're on Desktop";
+    }
+}
